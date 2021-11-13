@@ -1,0 +1,33 @@
+.tabBarNav {
+  border-bottom: 1px solid #ddd;
+  z-index: 1;
+
+  &Btn {
+    margin-bottom: -1px;
+    color: #42a7e3;
+    cursor: default;
+    background: #fff;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ddd;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 15px;
+    z-index: 1;
+
+    &:hover {
+      background: #f3f3f3;
+      border: 1px solid #ddd;
+    }
+
+    &.active {
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+      color: #555;
+      background: #fff;
+
+    }
+  }
+}

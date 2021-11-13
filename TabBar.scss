@@ -1,0 +1,44 @@
+.tabBar {
+  width: 100%;
+
+  .tabContainer {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    padding: 15px 15px 10px;
+    width: 100%;
+  }
+
+  &.vertical {
+    display: flex;
+    align-items: stretch;
+
+    .tabBarNav {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      flex: 1 0 20%;
+      z-index: 1;
+      border-bottom: none;
+
+      &Btn {
+        border-top-right-radius: 0;
+        border: 1px solid #ddd;
+        margin-bottom: 3px;
+
+        &.active {
+          border-right-color: #fff;
+        }
+      }
+    }
+
+    .tabContainer {
+      box-sizing: border-box;
+      flex: 1 0 80%;
+      top: 0;
+      margin-top: 0;
+      min-height: 200px;
+      margin-left: -3px;
+      z-index: 0;
+    }
+  }
+}
